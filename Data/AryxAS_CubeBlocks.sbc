@@ -42,8 +42,8 @@
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
             <ScreenAreas>
-                <ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_UpperScreen" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
-                <ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_LowerScreen" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
+                <ScreenArea Name="CockpitScreen_02" DisplayName="Upper Screen" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
+                <ScreenArea Name="CockpitScreen_01" DisplayName="Lower Screen" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
             </ScreenAreas>			
             <BuildTimeSeconds>35</BuildTimeSeconds>
             <DeformationRatio>0.4</DeformationRatio>
@@ -66,7 +66,7 @@
 			<DisplayName>{LOC:DisplayName_ARYX_ArmouredCamera}</DisplayName>
 			<Description>{LOC:Description_ARYX_ArmouredCamera}</Description>
 			<Icon>Textures\GUI\Icons\Blocks\Aryx\AryxArmouredCamera.dds</Icon>
-			<CubeSize>Large</CubeSize>
+			<CubeSize>Small</CubeSize>
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1"/>
 			<ModelOffset x="0" y="0" z="0"/>
