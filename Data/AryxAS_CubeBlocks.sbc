@@ -71,10 +71,13 @@
 			<Size x="1" y="1" z="1"/>
 			<ModelOffset x="0" y="0" z="0"/>
 			<Model>Models\Blocks\Aryx\Small\ARYX_ArmouredCamera.mwm</Model>
-			<Components>
-				<Component Subtype="SteelPlate" Count="10"/>
-			</Components>
-			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+            <Components>
+                <Component Subtype="SteelPlate" Count="3" />
+                <Component Subtype="Computer" Count="3" />
+	            <Component Subtype="SteelPlate" Count="3" />			
+                <Component Subtype="BulletproofGlass" Count="5" />
+            </Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
 			<MountPoints>
 				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
 				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
