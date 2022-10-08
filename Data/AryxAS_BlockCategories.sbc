@@ -10,6 +10,7 @@
       <Name>ARYXAssortedSystems</Name>
       <ItemIds>
 		<string>ProgrammableBlock/ARYX_ArmouredPB_LG</string>
+		<string>CameraBlock/ARYX_ArmouredCamera_SG</string>		
       </ItemIds>
     </Category> 
 
@@ -33,7 +34,7 @@
       <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
       <Name>SmallBlocks</Name>
       <ItemIds>
-
+		<string>CameraBlock/ARYX_ArmouredCamera_SG</string>
       </ItemIds>
     </Category>  	
 	

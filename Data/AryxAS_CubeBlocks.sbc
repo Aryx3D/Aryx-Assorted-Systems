@@ -42,8 +42,8 @@
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
             <ScreenAreas>
-                <ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_Screen_Large" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
-                <ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_Screen_Large" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
+                <ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_UpperScreen" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
+                <ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_LowerScreen" TextureResolution="512" ScreenWidth="16" ScreenHeight="8" />
             </ScreenAreas>			
             <BuildTimeSeconds>35</BuildTimeSeconds>
             <DeformationRatio>0.4</DeformationRatio>
@@ -58,7 +58,66 @@
             <IsAirTight>true</IsAirTight>			
 		</Definition>
 		
-		
+        <Definition xsi:type="MyObjectBuilder_CameraBlockDefinition">
+            <Id>
+                <TypeId>CameraBlock</TypeId>
+				<SubtypeId>ARYX_ArmouredCamera_SG</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_ARYX_ArmouredCamera}</DisplayName>
+			<Description>{LOC:Description_ARYX_ArmouredCamera}</Description>
+			<Icon>Textures\GUI\Icons\Blocks\Aryx\AryxArmouredCamera.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Blocks\Aryx\Small\ARYX_ArmouredCamera.mwm</Model>
+			<Components>
+				<Component Subtype="SteelPlate" Count="10"/>
+			</Components>
+			<CriticalComponent Subtype="SteelPlate" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Blocks\Aryx\Small\ARYX_ArmouredCamera_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Blocks\Aryx\Small\ARYX_ArmouredCamera_BS2.mwm"/>
+			</BuildProgressModels>
+            <VoxelPlacement>
+                <!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
+                <StaticMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.4</MaxAllowed>
+                    <MinAllowed>0</MinAllowed>
+                </StaticMode>
+                <DynamicMode>
+                    <PlacementMode>OutsideVoxel</PlacementMode>
+                    <MaxAllowed>0.4</MaxAllowed>
+                    <MinAllowed>0.01</MinAllowed>
+                </DynamicMode>
+            </VoxelPlacement>			
+			<BlockPairName>ARYX_ArmouredCamera</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>12</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.00003</RequiredPowerInput>
+            <OverlayTexture>Textures\GUI\Screens\camera_overlay.dds</OverlayTexture>
+            <MinFov>0.1</MinFov>
+            <MaxFov>1.04719755</MaxFov>
+            <Public>true</Public>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <EmissiveColorPreset>Default</EmissiveColorPreset>
+            <DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+            <DestroySound>PoofExplosionCat1</DestroySound>
+            <PCU>25</PCU>
+			
+		</Definition>		
 		
 		
 	</CubeBlocks>

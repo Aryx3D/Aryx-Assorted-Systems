@@ -128,8 +128,23 @@
     <comment/>
   </data> 
 
- 
-  
+  <data name="DisplayName_UpperScreen" xml:space="preserve">
+    <value>Upper Screen</value>
+    <comment/>
+  </data>
+   <data name="DisplayName_LowerScreen" xml:space="preserve">
+    <value>Lower Screen</value>
+    <comment/>
+  </data> 
+
+  <data name="DisplayName_ARYX_ArmouredCamera" xml:space="preserve">
+    <value>Armoured Camera</value>
+    <comment/>
+  </data>
+   <data name="Description_ARYX_ArmouredCamera" xml:space="preserve">
+    <value>A standard optical camera rigged into a heavy-duty steel casing to maximise survivability. Now can withstand more than 1 pistol shot!</value>
+    <comment/>
+  </data>   
   
   
   

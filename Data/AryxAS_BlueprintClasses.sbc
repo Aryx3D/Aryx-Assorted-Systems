@@ -4,7 +4,6 @@
 
 		<!--BLOCKS-->
     <Entry Class="LargeBlocks" BlueprintSubtypeId="ProgrammableBlock/ARYX_ArmouredPB_LG" />		
-
-	
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="CameraBlock/ARYX_ArmouredCamera_SG" />		
    </BlueprintClassEntries>
 </Definitions>
