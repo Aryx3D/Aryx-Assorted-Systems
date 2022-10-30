@@ -10,7 +10,10 @@
       <Name>ARYXAssortedSystems</Name>
       <ItemIds>
 		<string>ProgrammableBlock/ARYX_ArmouredPB_LG</string>
-		<string>CameraBlock/ARYX_ArmouredCamera_SG</string>		
+		<string>CameraBlock/ARYX_ArmouredCamera_SG</string>
+		<string>Conveyor/ARYX_SmallConveyorTeePipe</string>		
+		<string>ConveyorConnector/ARYX_SmallConveyorCornerPipe</string>
+		<string>ConveyorConnector/ARYX_SmallConveyorPipe</string>			
       </ItemIds>
     </Category> 
 
@@ -35,6 +38,9 @@
       <Name>SmallBlocks</Name>
       <ItemIds>
 		<string>CameraBlock/ARYX_ArmouredCamera_SG</string>
+		<string>Conveyor/ARYX_SmallConveyorTeePipe</string>		
+		<string>ConveyorConnector/ARYX_SmallConveyorCornerPipe</string>
+		<string>ConveyorConnector/ARYX_SmallConveyorPipe</string>		
       </ItemIds>
     </Category>  	
 	

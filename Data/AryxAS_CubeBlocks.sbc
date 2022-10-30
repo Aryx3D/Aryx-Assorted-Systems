@@ -123,5 +123,133 @@
 		</Definition>		
 		
 		
+		<Definition>
+			<Id>
+				<TypeId>ConveyorConnector</TypeId>
+				<SubtypeId>ARYX_SmallConveyorPipe</SubtypeId>
+			</Id>
+			<DisplayName>Small Conveyor Pipe</DisplayName>
+			<Icon>Textures\GUI\Icons\Blocks\Aryx\AryxSmallPipe.dds</Icon>
+			<Description>Description_ConveyorTube</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Blocks\Aryx\Small\AryxSmallPipeStraight.mwm</Model>
+			<Components>
+				<Component Subtype="InteriorPlate" Count="1" />
+				<Component Subtype="Motor" Count="1" />
+				<Component Subtype="Construction" Count="1" />
+			</Components>
+			<CriticalComponent Subtype="Motor" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.1" StartY="0.1" EndX="0.2" EndY="0.9" Default="true"/>
+				<MountPoint Side="Back" StartX="0.8" StartY="0.1" EndX="0.9" EndY="0.9" />
+				<MountPoint Side="Back" StartX="0.2" StartY="0.1" EndX="0.8" EndY="0.2" />
+				<MountPoint Side="Back" StartX="0.2" StartY="0.8" EndX="0.8" EndY="0.9" />
+				<MountPoint Side="Front" StartX="0.1" StartY="0.1" EndX="0.2" EndY="0.9" />
+				<MountPoint Side="Front" StartX="0.8" StartY="0.1" EndX="0.9" EndY="0.9" />
+				<MountPoint Side="Front" StartX="0.2" StartY="0.1" EndX="0.8" EndY="0.2" />
+				<MountPoint Side="Front" StartX="0.2" StartY="0.8" EndX="0.8" EndY="0.9" />
+			</MountPoints>
+			<CriticalComponent Subtype="Construction" Index="0" />
+					<BuildProgressModels>
+						<Model BuildPercentUpperBound="0.50" File="Models\Blocks\Aryx\Small\AryxSmallPipeStraight_BS1.mwm"/>
+						<Model BuildPercentUpperBound="1.00" File="Models\Blocks\Aryx\Small\AryxSmallPipeStraight_BS2.mwm"/>
+					</BuildProgressModels>
+			<BlockPairName>AryxSmallPipeStraight</BlockPairName>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>3</BuildTimeSeconds>
+			<DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+			<DestroySound>PoofExplosionCat1</DestroySound>
+			<PCU>10</PCU>
+			<IsAirTight>false</IsAirTight>      
+		</Definition>
+		<Definition>
+			<Id>
+				<TypeId>ConveyorConnector</TypeId>
+				<SubtypeId>ARYX_SmallConveyorCornerPipe</SubtypeId>
+			</Id>
+			<DisplayName>Small Conveyor Pipe Corner</DisplayName>
+			<Icon>Textures\GUI\Icons\Blocks\Aryx\AryxSmallPipeCurved.dds</Icon>
+			<Description>Description_ConveyorTube</Description>
+			<GuiVisible>false</GuiVisible>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Blocks\Aryx\Small\AryxSmallPipeCurved.mwm</Model>
+			<Components>
+				<Component Subtype="InteriorPlate" Count="1" />
+				<Component Subtype="Motor" Count="1" />
+				<Component Subtype="Construction" Count="1" />
+			</Components>
+			<CriticalComponent Subtype="Motor" Index="0" />
+					<BuildProgressModels>
+						<Model BuildPercentUpperBound="0.50" File="Models\Blocks\Aryx\Small\AryxSmallPipeCurved_BS1.mwm"/>
+						<Model BuildPercentUpperBound="1.00" File="Models\Blocks\Aryx\Small\AryxSmallPipeCurved_BS2.mwm"/>
+					</BuildProgressModels>
+					<BlockPairName>AryxSmallPipeCurved</BlockPairName>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>3</BuildTimeSeconds>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
+			<DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+			<DestroySound>PoofExplosionCat1</DestroySound>
+			<PCU>10</PCU>
+			<IsAirTight>false</IsAirTight>      
+		</Definition>
+		<Definition>
+			<Id>
+				<TypeId>Conveyor</TypeId>
+				<SubtypeId>ARYX_SmallConveyorTeePipe</SubtypeId>
+			</Id>
+			<DisplayName>Small Conveyor Pipe T-Junction</DisplayName>
+			<Icon>Textures\GUI\Icons\Blocks\Aryx\AryxSmallPipeTee.dds</Icon>
+			<Description>Description_ConveyorTube</Description>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1" />
+			<ModelOffset x="0" y="0" z="0" />
+			<Model>Models\Blocks\Aryx\Small\AryxSmallPipeTee.mwm</Model>
+			<Components>
+				<Component Subtype="InteriorPlate" Count="1" />
+				<Component Subtype="Motor" Count="1" />
+				<Component Subtype="Construction" Count="1" />
+			</Components>
+			<CriticalComponent Subtype="Motor" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Front" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<CriticalComponent Subtype="Construction" Index="0" />
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Blocks\Aryx\Small\AryxSmallPipeTee_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Blocks\Aryx\Small\AryxSmallPipeTee_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>AryxSmallPipeTee</BlockPairName>
+			<EdgeType>Light</EdgeType>
+			<BuildTimeSeconds>4</BuildTimeSeconds>
+			<DamageEffectName>Damage_HeavyMech_Damaged</DamageEffectName>
+			<DamagedSound>ParticleHeavyMech</DamagedSound>
+			<EmissiveColorPreset>Default</EmissiveColorPreset>
+			<DestroyEffect>BlockDestroyed_Small</DestroyEffect>
+			<DestroySound>PoofExplosionCat1</DestroySound>
+			<PCU>10</PCU>
+			<IsAirTight>false</IsAirTight>      
+		</Definition>
+
+		
 	</CubeBlocks>
 </Definitions>
